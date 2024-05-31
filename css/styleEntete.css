@@ -1,0 +1,312 @@
+.all{
+
+
+  position: fixed; /* Ou position: absolute; en fonction de vos besoins */
+  top: 0;
+  left: 0;
+
+
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: gray;
+
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2vw;
+  color: black;
+  background: #ffffffba;
+  height: 7vw;
+  width: 160%;
+  margin-bottom: -6vw;
+  margin-left: -23vw;
+}
+
+
+
+
+.titre p {
+  margin-top: 1vw;
+}
+
+
+
+
+
+.barre-grise {
+  visibility: hidden;
+}
+
+nav .main_pages {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+
+
+nav .main_pages a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 1vw;
+  color: black;
+  transition: background 0.3s ease-in-out;
+  margin-left: 4vw;
+  margin-top: -4vw;
+}
+
+nav a:hover {
+  background: #5a576651;
+}
+
+nav label{
+  visibility: hidden ;
+}
+
+.col-sx-12{
+  align-items: center;
+  
+}
+
+
+
+.row1 {
+  justify-content: center;
+  display: block;
+  position: relative;
+  width: 10vw;
+  height: 2vw;
+  z-index: 25;
+  margin-top: -4.2vw;
+  margin-left: 70vw;
+
+
+
+}
+
+.btn-transparent {
+  background: none;
+  border: none;
+}
+
+.search-icon {
+  visibility: hidden;
+  position: relative;
+}
+
+.form-control {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black; /* Set the text color to black */
+  width: 7vw;
+  height: 1vw;
+}
+
+.form-control::placeholder {
+  color: black;
+  font-size: 1vw; /* Set the placeholder text color to black */
+}
+
+.form-control:focus {
+  color: black; /* Set the focused text color to white */
+  font-size: 1vw; /* Set the focused font size */
+}
+
+.form-control {
+  color: black; /* Set the focused text color to white */
+  font-size: 1vw; /* Set the focused font size */
+}
+
+.proposition{
+  background-color: rgb(255, 255, 255);
+}
+
+
+nav .checkbox1{
+  visibility: hidden ;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  nav label {
+      visibility: visible;
+      font-size: 10vw;
+      margin-top: 6.5vw;
+      margin-left: 2vw;
+  }
+
+  nav .checkbox1 {
+      visibility: visible;
+  }
+
+  body {
+      margin: 0;
+      overflow: hidden;
+  }
+
+  .barre-grise {
+      visibility: visible;
+      height: 0.5vw;
+      background-color: grey;
+      margin-top: 2vw;
+      margin-bottom: 0.5vw;
+  }
+
+  .espace {
+      height: 3vw;
+  }
+
+  .espace2 {
+      height: 43vw;
+  }
+
+  .titre {
+      font-size: 8vw;
+      height: 15vw;
+      width: 220%;
+      margin-top: 7vw;
+      margin-left: -7vw;
+  }
+
+  .titre p {
+      margin-top: 3vw;
+      margin-left: -65vw;
+  }
+
+  .nav-item {
+      margin-top: 2vw;
+  }
+
+  nav .main_pages {
+      flex-direction: column;
+      background: #ffffffba;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 19vw;
+      width: 70vw;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-100%);
+      list-style: none;
+      padding: 0;
+      height: 200vw;
+      margin-left: -3vw;
+  }
+
+  nav .main_pages a {
+      width: 80%;
+      text-align: center;
+      margin: 1vw 0;
+      font-size: 5vw;
+      margin-left: 10vw;
+  }
+
+  nav a:hover {
+      background: #5a576651;
+  }
+
+  label {
+      width: 6vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 4vw;
+      color: black;
+      cursor: pointer;
+      position: absolute;
+      left: 4vw;
+      top: 1vw;
+  }
+
+  #toggle:checked + .main_pages a {
+      opacity: 1;
+  }
+
+  #toggle:checked + .main_pages {
+      transform: translateX(0);
+  }
+
+  #toggle {
+      display: none;
+  }
+
+  .search-icon {
+    visibility: visible;
+    margin-top: -8.5vw;
+    margin-left: 10vw;
+    width: 15vw;
+    height: 15vw;
+    z-index: 1;
+    position: absolute;  /* Ajoutez cette ligne pour fixer la position */
+}
+
+  .form-control {
+    position: absolute;
+    color: black;
+    font-size: 5vw;
+    width: 94vw;
+    height: 11vw;
+    background-color: transparent;
+    margin-top: -7.5vw;
+    margin-left: 2vw;
+    border: none;
+    outline: none;
+    z-index: 1;
+    top: 0;  /* Fixe la position verticale de la zone de texte */
+}
+
+
+  .form-control::placeholder {
+      color: black;
+      font-size: 5vw;
+  }
+
+  .form-control:focus {
+      color: black;
+      font-size: 5vw;
+  }
+
+  .form-control {
+      color: black;
+      font-size: 5vw;
+  }
+
+    #searchForm input[type="text"].show {
+        display: block !important;
+        background-color: rgb(255, 255, 255);
+        margin-left: -67vw;
+    }
+
+  #searchForm input[type="text"] {
+      display: none;
+  }
+
+  .proposition{
+    background-color: rgb(255, 255, 255);
+    width: 50vw;
+    margin-left: -67vw;
+    position: fixed;
+
+  }
+
+  
+
+}

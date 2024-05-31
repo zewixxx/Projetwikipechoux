@@ -1,0 +1,13 @@
+.contenuAffichage{
+    overflow-y: auto;
+    height: 70%; /* Ajout de cette propriété pour garantir une largeur maximale de 100% */
+    padding: 15px; /* Ajout de padding pour améliorer l'apparence */
+    margin-top: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -10;
+
+}

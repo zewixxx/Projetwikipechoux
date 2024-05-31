@@ -1,0 +1,18 @@
+
+.detailmad{
+    overflow-y: auto;
+    height: 70%; /* Ajout de cette propriété pour garantir une largeur maximale de 100% */
+    padding: 5px; /* Ajout de padding pour améliorer l'apparence */
+    margin-top: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-35%, -50%);
+    text-align: center;
+    z-index: -10;
+    width: 80%;
+}
+
+.image_detail img{
+    width: 60%;
+}

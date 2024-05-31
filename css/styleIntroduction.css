@@ -1,0 +1,6 @@
+.contenuIntroduction{
+    overflow-y: auto;
+    height: 70%; /* Ajout de cette propriété pour garantir une largeur maximale de 100% */
+    padding: 15px; /* Ajout de padding pour améliorer l'apparence */
+    margin-top: 15vw;
+}

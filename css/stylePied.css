@@ -1,0 +1,31 @@
+
+.footerPied a{
+    font-size: 1vw;
+    font-family: Arial, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.footerPied {
+    width: 100%;
+    text-align: center; /* Centre le contenu à l'intérieur du pied de page */
+    padding: 10px;
+    background-color: rgba(73, 57, 57, 0.495);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: -2vw;
+}
+
+.btnPied {
+    color: white;
+    font-size: 30px;
+    text-decoration: none !important; /* Annule le soulignage par défaut du lien */
+}
+
+.btnPied:hover {
+    color: white;
+}
